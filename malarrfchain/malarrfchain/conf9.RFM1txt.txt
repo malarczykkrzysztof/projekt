@@ -1,0 +1,184 @@
+------------------BOOT EXT info -------------------
+---  MPC8347 running in HARDWARE_ID= 0x34020000 ---
+---  Board: UNKNOWN, Variant: UNKNOWN, Ver: 0x0 ---
+---                                             ---
+---  FLASH SIZE = 32MB                          ---
+---  Sys clk: 33333 [kHz]                       ---
+---  Platform clk: 266666 [kHz]                 ---
+---  CPU clk: 533333 [kHz]                      ---
+---  Boot kernel  (Oct 12 2009 - 11:30:47 - 0.0.12  ---
+---  Boot extension  (Aug 10 2010 - 10:22:31 - 0.0.46  ---
+---  Boot EXT Start address = 0xfe200000        ---
+---  BOOT EXT activity = 0x41637400             ---
+---  BOOT EXT file tag = 0x45585431             ---
+---  CSSA Version = 32                          ---
+---  CSSA RCTRL REG = 0x0                       ---
+---  CSSA RESET CAUSE REG = 0x0                 ---
+---  DRAM test                  ---
+---  Test flag = 0x54455354                     ---
+---  dram = 0x4452414d                  ---
+---  result = 0x70617373                        ---
+---  DRAM test pass.                    ---
+
+Testing CFI-mode test to FLASH chip address 0xfe000000---
+FLASH test passed.                      ---
+------------------BOOT EXT info END ---------------
+Detecting SW IDs starting from FLASH address: 0xfe000000
+0x4d4f4e31
+0x4d4f4e32
+
+Matching ID found from FLASH address: 0xfe240000
+
+Start header    End header
+------------    ----------
+0x4d4f4e31      0x3b7cbce5
+0x5ef983        0x454e4454
+0x41637400      0x4d4f4e31
+0x400000
+0x1
+
+CRC checksum: 0x3b7cbce5 PASSED
+Success code: 0          PASSED
+
+Runtime SW started from SDRAM address: 0x400000
+Hardware Abstraction Layer running...
+Board info  : WMP - FRBB - X21
+CPU type    : MPC8347
+Sys clk     : 33333 [kHz]
+Platform clk: 266666 [kHz]
+CPU clk     : 533333 [kHz]
+Elapsed time: 10.320499 [s]
+Installed drivers (24 items):
+  /hal/dev/cssa
+    platform version: 2
+    design version:   32
+    base address:     0x80000000
+  /hal/dev/irq
+  /hal/bus/uart/mcu#1
+  /hal/bus/spi/barbi1#0
+  /hal/bus/spi/barbi1#1
+  /hal/bus/spi/barbi2#0
+  /hal/bus/spi/barbi2#1
+  /hal/bus/spi/barbi3#0
+  /hal/bus/spi/barbi3#1
+  /hal/bus/gpio/mcu
+  /hal/bus/gpio/cssa
+  /hal/bus/dma/mcu
+  /hal/dev/mux/cssa#i2c
+  /hal/bus/i2c/mcu#1
+  /hal/bus/i2c/cssa#1
+  /hal/bus/i2c/cssa#2
+  /hal/bus/i2c/cssa#3
+  /hal/bus/i2c/cssa#4
+  /hal/bus/i2c/cssa#5
+  /hal/dev/rom/boot
+  /hal/dev/led/cssa
+  /hal/bus/spi/cssa
+  /hal/bus/mdio/freescale
+  /hal/dev/watchdog/cssa
+
+RTOSE(debug) for RFM_PLATFORM built 111115 16:08 by rfscm
+Copyright 2003-2005 Enea Embedded Technology AB. All rights reserved.
+
+
+
+Welcome to RTOSE; an OSE reference system.
+Type 'help' for a list of available commands.
+> Wait for flash.
+Done
+SERIAL NO: L9105200424
+PRODUCT CODE: 085358A.X21
+RP3 CTRL-MESSAGES-INIT WAITING
+[0] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+ FF 36 EB
+Rp3 Control messages v3, compatibility IR2
+[0] in >>>  HEADER:  0  0  0 | TYPE: ??? /0x1 | PATH:  3 10  0 FF | ID: ??? /0xFF | PAYLOAD & CRC: FF FF FF FF FF FF FF FF C4
+ 4C
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC:  3  2  1  0  3 FF FF
+ FF 36 EB
+[0] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+ FF 36 EB
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC:  3  2  1  0  3 FF FF
+ FF 36 EB
+[0] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeLabel /0x1 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+FF DD C8
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeLabel /0x1 | PAYLOAD & CRC:  6 45 3B 28  5 16 75
+B0 DD C8
+[1] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+ FF 36 EB
+[1] in >>>  HEADER:  0  0  0 | TYPE: ??? /0x1 | PATH:  3 20  0 FF | ID: ??? /0xFF | PAYLOAD & CRC: FF FF FF FF FF FF FF FF 9D
+ BC
+[1] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC:  3  2  1  1  3 FF FF
+ FF 36 EB
+[1] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+ FF 36 EB
+[1] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC:  3  2  1  1  3 FF FF
+ FF 36 EB
+[1] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeLabel /0x1 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+FF DD C8
+[1] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeLabel /0x1 | PAYLOAD & CRC:  6 45 3B 28  5 16 75
+B0 DD C8
+[2] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+ FF 36 EB
+[2] in >>>  HEADER:  0  0  0 | TYPE: ??? /0x1 | PATH:  3 30  0 FF | ID: ??? /0xFF | PAYLOAD & CRC: FF FF FF FF FF FF FF FF AA
+ EC
+[2] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC:  3  2  1  2  3 FF FF
+ FF 36 EB
+[2] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+ FF 36 EB
+[2] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeReport /0x0 | PAYLOAD & CRC:  3  2  1  2  3 FF FF
+ FF 36 EB
+[2] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: NodeLabel /0x1 | PAYLOAD & CRC: FF FF FF FF FF FF FF
+FF DD C8
+[2] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: NodeLabel /0x1 | PAYLOAD & CRC:  6 45 3B 28  5 16 75
+B0 DD C8
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: LinkMasterNodeLabel /0x2 | PAYLOAD & CRC:  7 5B CD 15
+  0  7 31 AD BD 63
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: LinkMasterNodeLabel /0x2 | PAYLOAD & CRC:  7 5B CD 15
+  0  7 31 AD BD 63
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: OAMScheduling /0x1B | PAYLOAD & CRC:  0  1 E2  3 C0 F
+F FF FF 7D EF
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: OAMScheduling /0x1B | PAYLOAD & CRC:  0  1 E2  3 C0 F
+F FF FF 7D EF
+[0] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: Rp3-01PortStatusInd /0x4 | PAYLOAD & CRC: FF FF FF FF
+ FF FF FF FF AA  4
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: Rp3-01PortStatusInd /0x4 | PAYLOAD & CRC:  7  1 FF FF
+ FF FF FF FF AA  4
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: DeltaCorrection /0xE | PAYLOAD & CRC:  0  0  0  0  8
+FF FF FF 39 71
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: DeltaCorrection /0xE | PAYLOAD & CRC:  0  0  0  0  8
+FF FF FF 39 71
+[0] in >>>  HEADER:  0  0  0 | TYPE: Get /0x9 | PATH:  0  0  0  0 | ID: forwardingDelay /0xF | PAYLOAD & CRC:  0  0 FF FF FF
+FF FF FF 9F 81
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: forwardingDelay /0xF | PAYLOAD & CRC:  0  0  0  3 47
+34 FF FF 9F 81
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: MacAddr /0x15 | PAYLOAD & CRC:  2  0  0  4  1 11 FF F
+F 20 D3
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: MacAddr /0x15 | PAYLOAD & CRC:  2  0  0  4  1 11 FF F
+F 20 D3
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: IPAddr_Netmask /0x14 | PAYLOAD & CRC: C0 A8 FE 81 17
+FF FF FF 8E 33
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: IPAddr_Netmask /0x14 | PAYLOAD & CRC: C0 A8 FE 81 17
+FF FF FF 8E 33
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: MacAddr /0x17 | PAYLOAD & CRC:  2  0  0  4 11 11 FF F
+F FD 13
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: MacAddr /0x17 | PAYLOAD & CRC:  2  0  0  4 11 11 FF F
+F FD 13
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: FilterIPAddr_Netmask /0x16 | PAYLOAD & CRC: C0 A8 FE
+99 17 FF FF FF 4E 23
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: FilterIPAddr_Netmask /0x16 | PAYLOAD & CRC: C0 A8 FE
+99 17 FF FF FF 4E 23
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: SM_IPAddr /0x18 | PAYLOAD & CRC: C0 A8 FF 10 FF FF FF
+ FF F3 71
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: SM_IPAddr /0x18 | PAYLOAD & CRC: C0 A8 FF 10 FF FF FF
+ FF F3 71
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: EthernetScheduling /0x1A | PAYLOAD & CRC: FF  0  4  0
+  3  2 FF FF DB 92
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: EthernetScheduling /0x1A | PAYLOAD & CRC: FF  0  4  0
+  3  2 FF FF DB 92
+[0] in >>>  HEADER:  0  0  0 | TYPE: Set /0xA | PATH:  0  0  0  0 | ID: EthernetPorts /0x19 | PAYLOAD & CRC:  1 FF FF FF FF F
+F FF FF F9 F6
+[0] <<<out  HEADER:  0  0  0 | TYPE: Resp/0xC | PATH:  0  0  0  0 | ID: EthernetPorts /0x19 | PAYLOAD & CRC:  1 FF FF FF FF F
+F FF FF F9 F6
+Local Ethernet address:  02:00:00:04:01:11
+START LISTENING Soap gateway,started listening IPAddress 192.168.254.129, port 13100
